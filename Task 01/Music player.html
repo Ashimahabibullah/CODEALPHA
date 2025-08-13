@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Style Music Player</title>
+  <link rel="stylesheet" href="Music player.css" />
+</head>
+<body>
+  <div class="player">
+    <div class="banner-container">
+      <img class="banner-img" src="" alt="Song artwork banner">
+    </div>
+    <h2 class="title"></h2>
+    <h3 class="artist"></h3>
+
+    <audio id="audio"></audio>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" step="1">
+      <span id="total-time">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+    </div>
+  </div>
+
+  <script src="Music player.js"></script>
+</body>
+</html>
